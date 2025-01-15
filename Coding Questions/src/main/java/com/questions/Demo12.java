@@ -15,7 +15,7 @@ public class Demo12 {
 
 	public static void main(String[] args) {
 		int arr[] = { 1, 2, 3, 4, 5,3 };
-		System.out.println("Duplicate elements is:" + duplicateNumber(arr));
+		System.out.println("Duplicate element is:" + duplicateNumber(arr));
 	}
 
 }
