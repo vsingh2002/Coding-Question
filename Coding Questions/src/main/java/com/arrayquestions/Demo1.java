@@ -4,6 +4,13 @@ import java.util.Arrays;
 
 // Given an array of integers return an array with even integers removed
 public class Demo1 {
+	public static void printArray(int arr[]) {
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+	}
+
 	public static int[] removeEven(int arr[]) {
 		int oddCount = 0;
 		for (int i = 0; i < arr.length; i++) {
@@ -26,8 +33,11 @@ public class Demo1 {
 
 	public static void main(String[] args) {
 		int arr[] = { 3, 2, 4, 7, 10, 6, 5 };
-		System.out.println(Arrays.toString(removeEven(arr)));
-
+		System.out.println("Original array");
+		printArray(arr);
+		System.out.println("After removing even integer");
+		int result[] = removeEven(arr);
+		printArray(result);
 	}
 
 }
